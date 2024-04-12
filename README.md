@@ -1,4 +1,4 @@
-# Techniki Programowania - Projekt 3
+# Techniki Programowania - Projekt 4 (stary)
 Projekt polega na wczytaniu, przetworzeniu oraz zwizualizowaniu sygnałów występujących w systemach robotycznych. Projekt będzie realizowany z wykorzystaniem programu CMake.
 
 
