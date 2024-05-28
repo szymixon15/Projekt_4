@@ -23,10 +23,6 @@ if(Eigen_ADDED)
   target_include_directories(Eigen INTERFACE ${Eigen_SOURCE_DIR})
 endif()
 
-add_executable(plot main.cpp)
-target_link_libraries(plot matplot)
-target_link_libraries(plot Eigen)
-
 set(PLANAR_QUADROTOR_SOURCES PlanarQuadrotor/simulate.cpp PlanarQuadrotor/planar_quadrotor.cpp PlanarQuadrotor/planar_quadrotor_visualizer.cpp PlanarQuadrotor/lqr.cpp)
 add_executable(planar_quadrotor ${PLANAR_QUADROTOR_SOURCES})
 if(TARGET SDL2::SDL2main)
