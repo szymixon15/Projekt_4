@@ -15,7 +15,7 @@ Korzystając z Visual Code i dodatku CMake tools, można buować i uruchamiać p
 mkdir build
 cd build
 cmake ..
-cmake --build .  # zmienić 16 na liczbę rdzeni
+cmake --build .
 ```
 
 ## Uruchomienie aplikacji
