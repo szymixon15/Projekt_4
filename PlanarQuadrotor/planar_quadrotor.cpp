@@ -1,5 +1,6 @@
 #include <iostream>
 #include <random>
+#include <algorithm>
 
 #include "planar_quadrotor.h"
 
@@ -113,6 +114,8 @@ Eigen::VectorXf PlanarQuadrotor::Update(Eigen::Vector2f &input, float dt) {
     SetInput(input);
     DoCalcTimeDerivatives();
     DoUpdateState(dt);
+
+    z = z + dt * z_dot;
 
     return z;
 }

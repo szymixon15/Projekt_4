@@ -31,3 +31,12 @@ if(TARGET SDL2::SDL2main)
 endif()
 target_link_libraries(planar_quadrotor SDL2::SDL2 SDL2_gfx Eigen matplot)
 target_include_directories(planar_quadrotor PRIVATE ${PROJECT_SOURCE_DIR})
+
+# Dodaj SFML
+set(SFML_DIR "C:/Users/Marcel/Desktop/projekt - 4/tp_projekt_4/SFML/lib/cmake/SFML")
+set(CMAKE_PREFIX_PATH "${CMAKE_PREFIX_PATH};${SFML_DIR}")
+
+find_package(SFML 2.5 COMPONENTS audio REQUIRED)
+
+# Dodaj do projektu bibliotekę SFML
+target_link_libraries(planar_quadrotor sfml-audio)
